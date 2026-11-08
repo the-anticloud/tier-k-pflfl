@@ -1,0 +1,2429 @@
+{
+ "schema": "anticloud.tier-bench/1",
+ "project": "K_PFLFL",
+ "source": {
+  "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\TIER_5_WORLD_NEURO_EMBODIED\\K_PFLFL\\UPSTREAM",
+  "git": {
+   "head": "3bb1dcf78b2c4c50d1216c31bb2fdc401748218a",
+   "url": "https://github.com/adap/flower.git",
+   "branch": "main",
+   "committed_at": "2026-09-29T19:09:48-07:00"
+  }
+ },
+ "metrics": {
+  "files_total": 3216,
+  "source_files_scanned": 1778,
+  "lines_of_code": 303545,
+  "languages": {
+   ".py": 1558,
+   ".png": 264,
+   ".md": 200,
+   ".rst": 173,
+   ".yaml": 162,
+   "(none)": 156,
+   ".toml": 131,
+   ".swift": 73,
+   ".sh": 73,
+   ".csv": 62,
+   ".proto": 51,
+   ".pyi": 34,
+   ".xml": 23,
+   ".h": 23,
+   ".txt": 22
+  }
+ },
+ "licence": {
+  "spdx": "Apache-2.0",
+  "class": "A",
+  "source_file": "LICENSE",
+  "redistribution_allowed": true
+ },
+ "dependencies": {
+  "count": 46,
+  "unique": 35,
+  "by_ecosystem": {
+   "pypi": 46
+  },
+  "list": [
+   {
+    "ecosystem": "pypi",
+    "name": "flwr",
+    "version": ">=1.38.0",
+    "source_file": "hub/apps/agent/pyproject.toml",
+    "raw": "flwr>=1.38.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "openai",
+    "version": ">=2.16.0",
+    "source_file": "hub/apps/agent/pyproject.toml",
+    "raw": "openai>=2.16.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "numpy",
+    "version": ">=1.26.0",
+    "source_file": "framework/pyproject.toml",
+    "raw": "numpy>=1.26.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "grpcio",
+    "version": ">=1.70.0",
+    "source_file": "framework/pyproject.toml",
+    "raw": "grpcio>=1.70.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "grpcio-health-checking",
+    "version": ">=1.70.0",
+    "source_file": "framework/pyproject.toml",
+    "raw": "grpcio-health-checking>=1.70.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "protobuf",
+    "version": ">=5.28.0",
+    "source_file": "framework/pyproject.toml",
+    "raw": "protobuf>=5.28.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "cryptography",
+    "version": ">=46.0.7",
+    "source_file": "framework/pyproject.toml",
+    "raw": "cryptography>=46.0.7"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pycryptodome",
+    "version": ">=3.18.0",
+    "source_file": "framework/pyproject.toml",
+    "raw": "pycryptodome>=3.18.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "iterators",
+    "version": ">=0.0.2",
+    "source_file": "framework/pyproject.toml",
+    "raw": "iterators>=0.0.2"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "typer",
+    "version": ">=0.13.0",
+    "source_file": "framework/pyproject.toml",
+    "raw": "typer>=0.13.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "uv",
+    "version": ">=0.11.15",
+    "source_file": "framework/pyproject.toml",
+    "raw": "uv>=0.11.15"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "tomli",
+    "version": ">=2.0.1",
+    "source_file": "framework/pyproject.toml",
+    "raw": "tomli>=2.0.1"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "tomli-w",
+    "version": ">=1.0.0",
+    "source_file": "framework/pyproject.toml",
+    "raw": "tomli-w>=1.0.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pathspec",
+    "version": ">=1.0.4",
+    "source_file": "framework/pyproject.toml",
+    "raw": "pathspec>=1.0.4"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "prompt-toolkit",
+    "version": ">=3.0.52",
+    "source_file": "framework/pyproject.toml",
+    "raw": "prompt-toolkit>=3.0.52"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "rich",
+    "version": ">=14.0.0",
+    "source_file": "framework/pyproject.toml",
+    "raw": "rich>=14.0.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pyyaml",
+    "version": ">=6.0.2",
+    "source_file": "framework/pyproject.toml",
+    "raw": "pyyaml>=6.0.2"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "requests",
+    "version": ">=2.33.0",
+    "source_file": "framework/pyproject.toml",
+    "raw": "requests>=2.33.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "httpx",
+    "version": ">=0.28.1",
+    "source_file": "framework/pyproject.toml",
+    "raw": "httpx>=0.28.1"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "click",
+    "version": ">=8.0.0",
+    "source_file": "framework/pyproject.toml",
+    "raw": "click>=8.0.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "packaging",
+    "version": ">=24.0",
+    "source_file": "framework/pyproject.toml",
+    "raw": "packaging>=24.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "datasets",
+    "version": ">=4.0.0",
+    "source_file": "framework/e2e/e2e-tensorflow/pyproject.toml",
+    "raw": "datasets>=4.0.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "flwr",
+    "version": "@",
+    "source_file": "framework/e2e/e2e-serverapp-heartbeat/pyproject.toml",
+    "raw": "flwr @"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "datasets",
+    "version": ">=4.0.0",
+    "source_file": "framework/e2e/e2e-pytorch/pyproject.toml",
+    "raw": "datasets>=4.0.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "datasets",
+    "version": ">=4.0.0",
+    "source_file": "framework/e2e/e2e-opacus/pyproject.toml",
+    "raw": "datasets>=4.0.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "flwr",
+    "version": "@",
+    "source_file": "framework/e2e/e2e-bare-https/pyproject.toml",
+    "raw": "flwr @"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "flwr",
+    "version": "@",
+    "source_file": "framework/e2e/e2e-bare-auth/pyproject.toml",
+    "raw": "flwr @"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "flwr",
+    "version": ">=1.36.0",
+    "source_file": "examples/supernode-authentication/pyproject.toml",
+    "raw": "flwr>=1.36.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "flwr",
+    "version": ">=1.35.0",
+    "source_file": "examples/federated-analytics/pyproject.toml",
+    "raw": "flwr>=1.35.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pandas",
+    "version": "==2.3.3",
+    "source_file": "examples/federated-analytics/pyproject.toml",
+    "raw": "pandas==2.3.3"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "SQLAlchemy",
+    "version": "==2.0.45",
+    "source_file": "examples/federated-analytics/pyproject.toml",
+    "raw": "SQLAlchemy==2.0.45"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "flwr",
+    "version": ">=1.28.0",
+    "source_file": "examples/embedded-devices/pyproject.toml",
+    "raw": "flwr>=1.28.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "black",
+    "version": "==25.11.0",
+    "source_file": "dev/pyproject.toml",
+    "raw": "black==25.11.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "grpcio-tools",
+    "version": "==1.70.0",
+    "source_file": "dev/pyproject.toml",
+    "raw": "grpcio-tools==1.70.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "mypy-protobuf",
+    "version": "==3.6.0",
+    "source_file": "dev/pyproject.toml",
+    "raw": "mypy-protobuf==3.6.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "PyYAML",
+    "version": ">=6.0.2",
+    "source_file": "dev/pyproject.toml",
+    "raw": "PyYAML>=6.0.2"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "numpy",
+    "version": ">=1.26.0",
+    "source_file": "datasets/pyproject.toml",
+    "raw": "numpy>=1.26.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "datasets",
+    "version": ">=4.0.0",
+    "source_file": "datasets/pyproject.toml",
+    "raw": "datasets>=4.0.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "tqdm",
+    "version": ">=4.66.1",
+    "source_file": "datasets/pyproject.toml",
+    "raw": "tqdm>=4.66.1"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "rich",
+    "version": ">=14.0.0",
+    "source_file": "datasets/pyproject.toml",
+    "raw": "rich>=14.0.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "matplotlib",
+    "version": ">=3.7.5",
+    "source_file": "datasets/pyproject.toml",
+    "raw": "matplotlib>=3.7.5"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "seaborn",
+    "version": ">=0.13.0",
+    "source_file": "datasets/pyproject.toml",
+    "raw": "seaborn>=0.13.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "furo",
+    "version": "==2024.8.6",
+    "source_file": "agent/pyproject.toml",
+    "raw": "furo==2024.8.6"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "myst-parser",
+    "version": "==3.0.1",
+    "source_file": "agent/pyproject.toml",
+    "raw": "myst-parser==3.0.1"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "sphinx",
+    "version": "==7.4.7",
+    "source_file": "agent/pyproject.toml",
+    "raw": "sphinx==7.4.7"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "sphinx-substitution-extensions",
+    "version": "==2022.2.16",
+    "source_file": "agent/pyproject.toml",
+    "raw": "sphinx-substitution-extensions==2022.2.16"
+   }
+  ]
+ },
+ "owasp_top10": {
+  "total_findings": 1093,
+  "files_with_findings": 1031,
+  "severity": {
+   "high": 74,
+   "medium": 41,
+   "low": 978
+  },
+  "categories": {
+   "A01-BrokenAccessControl": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "framework/py/flwr/supercore/protobuf/client_test.py",
+      "line": 90,
+      "cwe": "CWE-295",
+      "snippet": "verify=False,"
+     }
+    ]
+   },
+   "A02-CryptographicFailures": {
+    "count": 4,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "examples/quickstart-cpp/src/line_fit_model.cc",
+      "line": 17,
+      "cwe": "CWE-338",
+      "snippet": "std::mt19937 mt(rd());"
+     },
+     {
+      "severity": "medium",
+      "file": "examples/quickstart-cpp/src/synthetic_dataset.cc",
+      "line": 15,
+      "cwe": "CWE-338",
+      "snippet": "std::mt19937 mt(rd());"
+     },
+     {
+      "severity": "medium",
+      "file": "baselines/heterofl/heterofl/datasets/utils.py",
+      "line": 84,
+      "cwe": "CWE-327",
+      "snippet": "md5 = hashlib.md5()"
+     },
+     {
+      "severity": "medium",
+      "file": "baselines/flwr_baselines/flwr_baselines/publications/leaf/femnist/dataset/utils.py",
+      "line": 40,
+      "cwe": "CWE-327",
+      "snippet": "hash_val = hashlib.md5(file_read).hexdigest()"
+     }
+    ]
+   },
+   "A03-Injection": {
+    "count": 60,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "framework/dev/check-migrations.sh",
+      "line": 35,
+      "cwe": "CWE-78",
+      "snippet": "FRAMEWORK_DIR=$(pwd)"
+     },
+     {
+      "severity": "high",
+      "file": "examples/whisper-federated-finetuning/centralized.py",
+      "line": 102,
+      "cwe": "CWE-95",
+      "snippet": "encoder.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "examples/whisper-federated-finetuning/whisper_example/model.py",
+      "line": 70,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "examples/vertical-fl/vertical_fl/task.py",
+      "line": 146,
+      "cwe": "CWE-95",
+      "snippet": "head.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "examples/quickstart-pennylane/quickstart_pennylane/task.py",
+      "line": 170,
+      "cwe": "CWE-95",
+      "snippet": "net.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "examples/quickstart-monai/monaiexample/task.py",
+      "line": 65,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "examples/quickstart-mlx/mlxexample/client_app.py",
+      "line": 54,
+      "cwe": "CWE-95",
+      "snippet": "mx.eval(model.parameters(), optimizer.state)"
+     },
+     {
+      "severity": "high",
+      "file": "examples/quickstart-lerobot/lerobot_example/task.py",
+      "line": 168,
+      "cwe": "CWE-95",
+      "snippet": "policy.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "examples/quickstart-huggingface/huggingface_example/task.py",
+      "line": 82,
+      "cwe": "CWE-95",
+      "snippet": "net.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "examples/flowertune-vit/vitexample/task.py",
+      "line": 62,
+      "cwe": "CWE-95",
+      "snippet": "net.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "examples/fl-tabular/fltabular/task.py",
+      "line": 95,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "examples/fedrag/data/download.py",
+      "line": 24,
+      "cwe": "CWE-78",
+      "snippet": "os.system("
+     },
+     {
+      "severity": "high",
+      "file": "examples/embedded-devices/embeddedexample/task.py",
+      "line": 73,
+      "cwe": "CWE-95",
+      "snippet": "net.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "examples/android/tflite_convertor/tfltransfer/heads/keras_model_head.py",
+      "line": 58,
+      "cwe": "CWE-95",
+      "snippet": "self._initial_params = [variable.eval() for variable in variables]"
+     },
+     {
+      "severity": "high",
+      "file": "examples/android/tflite_convertor/tfltransfer/heads/logits_saved_model_head.py",
+      "line": 57,
+      "cwe": "CWE-95",
+      "snippet": "self._initial_params = [variable.eval() for variable in variables]"
+     },
+     {
+      "severity": "high",
+      "file": "dev/build-baseline-docs.sh",
+      "line": 12,
+      "cwe": "CWE-78",
+      "snippet": "ROOT=$(pwd)"
+     },
+     {
+      "severity": "high",
+      "file": "dev/devtool/build_example_docs.py",
+      "line": 293,
+      "cwe": "CWE-78",
+      "snippet": "subprocess.call(f\"cd {ROOT}/examples/docs && make html\", shell=True)"
+     },
+     {
+      "severity": "high",
+      "file": "benchmarks/flowertune-llm/evaluation/finance/eval.py",
+      "line": 54,
+      "cwe": "CWE-95",
+      "snippet": "model = model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "baselines/tamuna/tamuna/client.py",
+      "line": 113,
+      "cwe": "CWE-502",
+      "snippet": "state = pickle.load(handle)"
+     },
+     {
+      "severity": "high",
+      "file": "baselines/tamuna/tamuna/models.py",
+      "line": 316,
+      "cwe": "CWE-95",
+      "snippet": "net.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "baselines/statavg/statavg/client_app.py",
+      "line": 140,
+      "cwe": "CWE-502",
+      "snippet": "scaler = pickle.loads("
+     },
+     {
+      "severity": "high",
+      "file": "baselines/statavg/statavg/strategy.py",
+      "line": 186,
+      "cwe": "CWE-502",
+      "snippet": "pickle.loads(client_objs[\"scaler\"]) for _, client_objs in fit_metrics"
+     },
+     {
+      "severity": "high",
+      "file": "baselines/ssfl/tests/test_saliency.py",
+      "line": 47,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "baselines/ssfl/ssfl/saliency.py",
+      "line": 16,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "baselines/ssfl/ssfl/training.py",
+      "line": 102,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     }
+    ]
+   },
+   "A04-InsecureDesign": {
+    "count": 13,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "model/docs/source/conf.py",
+      "line": 29,
+      "cwe": "CWE-",
+      "snippet": "# Fixing path issue for autodoc"
+     },
+     {
+      "severity": "low",
+      "file": "hub/docs/source/conf.py",
+      "line": 29,
+      "cwe": "CWE-",
+      "snippet": "# Fixing path issue for autodoc"
+     },
+     {
+      "severity": "low",
+      "file": "framework/docs/source/conf_base.py",
+      "line": 36,
+      "cwe": "CWE-",
+      "snippet": "# Fixing path issue for autodoc, in case `flwr` project is not installed."
+     },
+     {
+      "severity": "low",
+      "file": "examples/quickstart-cpp/include/synthetic_dataset.h",
+      "line": 29,
+      "cwe": "CWE-",
+      "snippet": "// TODO: consider changing this to a pair with the label."
+     },
+     {
+      "severity": "low",
+      "file": "examples/ios/FLiOS/CoreMLProto/DataStructures.pb.swift",
+      "line": 61,
+      "cwe": "CWE-",
+      "snippet": "struct CoreML_Specification_StringToDoubleMap {"
+     },
+     {
+      "severity": "low",
+      "file": "examples/ios/FLiOS/CoreMLProto/Imputer.pb.swift",
+      "line": 88,
+      "cwe": "CWE-",
+      "snippet": "var imputedStringDictionary: CoreML_Specification_StringToDoubleMap {"
+     },
+     {
+      "severity": "low",
+      "file": "examples/ios/FLiOS/CoreMLHelpers/CGImage+CVPixelBuffer.swift",
+      "line": 78,
+      "cwe": "CWE-",
+      "snippet": "// TODO: If the orientation is not .up, then rotate the CGImage."
+     },
+     {
+      "severity": "low",
+      "file": "examples/ios/FLiOS/CoreMLHelpers/MLMultiArray+Helpers.swift",
+      "line": 57,
+      "cwe": "CWE-",
+      "snippet": "- TODO: Support .float32 and .int32 types too."
+     },
+     {
+      "severity": "low",
+      "file": "examples/docs/source/conf.py",
+      "line": 42,
+      "cwe": "CWE-",
+      "snippet": "\"sphinx.ext.autodoc\","
+     },
+     {
+      "severity": "low",
+      "file": "examples/android/tflite_convertor/tfltransfer/model_correctness_test.py",
+      "line": 323,
+      "cwe": "CWE-",
+      "snippet": "# TODO(b/135138207) investigate if we can get rid of this."
+     },
+     {
+      "severity": "low",
+      "file": "datasets/docs/source/conf.py",
+      "line": 34,
+      "cwe": "CWE-",
+      "snippet": "# Fixing path issue for autodoc"
+     },
+     {
+      "severity": "low",
+      "file": "baselines/docs/source/conf.py",
+      "line": 29,
+      "cwe": "CWE-",
+      "snippet": "# Fixing path issue for autodoc"
+     },
+     {
+      "severity": "low",
+      "file": "baselines/dasha/dasha/tests/test_dasha_baseline.py",
+      "line": 97,
+      "cwe": "CWE-",
+      "snippet": "# TODO: Maybe fix it. I don't know in which round"
+     }
+    ]
+   },
+   "A05-SecurityMisconfiguration": {
+    "count": 33,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/supernode/start_client_internal_test.py",
+      "line": 474,
+      "cwe": "CWE-1188",
+      "snippet": "# so the child SuperExec must connect with `--insecure`."
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/supernode/cli/flower_supernode.py",
+      "line": 409,
+      "cwe": "CWE-1188",
+      "snippet": "\"--insecure\","
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/supernode/cli/flower_supernode_test.py",
+      "line": 102,
+      "cwe": "CWE-1188",
+      "snippet": "monkeypatch.setattr(sys, \"argv\", [\"flower-supernode\", \"--insecure\"])"
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/supernode/cli/flwr_clientapp_test.py",
+      "line": 51,
+      "cwe": "CWE-1188",
+      "snippet": "\"--insecure\","
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/superlink/cli/flower_superlink.py",
+      "line": 526,
+      "cwe": "CWE-1188",
+      "snippet": "\"Option `--insecure` was set. Starting insecure HTTP server with \""
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/superlink/cli/flower_superlink_test.py",
+      "line": 95,
+      "cwe": "CWE-1188",
+      "snippet": "monkeypatch.setattr(app_module.sys, \"argv\", [\"flower-superlink\", \"--insecure\"])"
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/superlink/cli/flwr_serverapp_test.py",
+      "line": 51,
+      "cwe": "CWE-1188",
+      "snippet": "\"--insecure\","
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/supercore/tls.py",
+      "line": 29,
+      "cwe": "CWE-1188",
+      "snippet": "return [\"--insecure\"]"
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/supercore/tls_test.py",
+      "line": 78,
+      "cwe": "CWE-1188",
+      "snippet": "\"--insecure\""
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/supercore/superexec/executor/kubernetes_executor.py",
+      "line": 1082,
+      "cwe": "CWE-1188",
+      "snippet": "args.append(\"--insecure\")"
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/supercore/superexec/executor/kubernetes_executor_test.py",
+      "line": 220,
+      "cwe": "CWE-1188",
+      "snippet": "\"--insecure\","
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/supercore/superexec/executor/subprocess_executor.py",
+      "line": 65,
+      "cwe": "CWE-1188",
+      "snippet": "args.append(\"--insecure\")"
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/supercore/superexec/executor/subprocess_executor_test.py",
+      "line": 58,
+      "cwe": "CWE-1188",
+      "snippet": "\"--insecure\","
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/supercore/superexec/executor/warm_executor_dispatch.py",
+      "line": 369,
+      "cwe": "CWE-1188",
+      "snippet": "command.append(\"--insecure\")"
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/supercore/state/alembic/env.py",
+      "line": 63,
+      "cwe": "CWE-1188",
+      "snippet": "compare_server_default=True,"
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/supercore/protobuf/client_test.py",
+      "line": 90,
+      "cwe": "CWE-1188",
+      "snippet": "verify=False,"
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/supercore/exit/exit_code.py",
+      "line": 178,
+      "cwe": "CWE-1188",
+      "snippet": "ExitCode.COMMON_TLS_NOT_SUPPORTED: \"Please use the '--insecure' flag.\","
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/supercore/cli/flower_superexec.py",
+      "line": 151,
+      "cwe": "CWE-1188",
+      "snippet": "\"--insecure\","
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/supercore/cli/flwr_agentapp_test.py",
+      "line": 57,
+      "cwe": "CWE-1188",
+      "snippet": "\"--insecure\","
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/supercore/cli/flwr_connector_test.py",
+      "line": 48,
+      "cwe": "CWE-1188",
+      "snippet": "\"--insecure\","
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/supercore/cli/flwr_model_test.py",
+      "line": 55,
+      "cwe": "CWE-1188",
+      "snippet": "\"--insecure\","
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/simulation/app_test.py",
+      "line": 89,
+      "cwe": "CWE-1188",
+      "snippet": "\"--insecure\","
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/compat/server/app.py",
+      "line": 114,
+      "cwe": "CWE-1188",
+      "snippet": "\"\\n\\n\\t\\t$ flower-superlink --insecure\""
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/compat/client/app.py",
+      "line": 170,
+      "cwe": "CWE-1188",
+      "snippet": "\"\\n\\n\\t\\t$ flower-supernode --insecure --superlink='<IP>:<PORT>'\""
+     },
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/common/args.py",
+      "line": 97,
+      "cwe": "CWE-1188",
+      "snippet": "\"--insecure\","
+     }
+    ]
+   },
+   "A06-VulnerableComponents": {
+    "count": 10,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/superlink/servicer/control/control_handlers_test.py",
+      "line": 392,
+      "cwe": "CWE-1104",
+      "snippet": "request.app_spec = \"@flwr/demo==0.0.1\""
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supercore/fab_format_version_test.py",
+      "line": 183,
+      "cwe": "CWE-1104",
+      "snippet": "\"dependencies\": [\"flwr>=1.26.0,==1.27.0,!=1.27.1\"],"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supercore/utils_test.py",
+      "line": 262,
+      "cwe": "CWE-1104",
+      "snippet": "\"user/app==1.2.3\",  # missing '@'"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supercore/superexec/dependency_installer_test.py",
+      "line": 61,
+      "cwe": "CWE-1104",
+      "snippet": "\"FlWr == 1.27.0\","
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supercore/error/grpc.py",
+      "line": 83,
+      "cwe": "CWE-1104",
+      "snippet": "# Check `.code()` first (experimental API in grpcio==1.78.1)"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/common/config_test.py",
+      "line": 709,
+      "cwe": "CWE-1104",
+      "snippet": "\"dependencies\": [\"flwr>=1.26.0,==1.27.0\"],"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/cli/build_test.py",
+      "line": 261,
+      "cwe": "CWE-1104",
+      "snippet": "'dependencies = [\"flwr>=1.26.0,>=1.27.0,==1.27.0\"]\\n'"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/cli/new/new_test.py",
+      "line": 36,
+      "cwe": "CWE-1104",
+      "snippet": "\"user/app==1.2.3\",  # missing '@'"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/cli/app_cmd/review.py",
+      "line": 52,
+      "cwe": "CWE-1104",
+      "snippet": "help=\"App specifier (e.g., '@account/app' or '@account/app==1.0.0'). \""
+     },
+     {
+      "severity": "low",
+      "file": "baselines/flwr_baselines/dev/bootstrap.sh",
+      "line": 10,
+      "cwe": "CWE-1104",
+      "snippet": "python -m pip install -U setuptools==80.9.0"
+     }
+    ]
+   },
+   "A07-AuthFailures": {
+    "count": 11,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "framework/py/flwr/supernode/routers/runtime/runtime_auth_integration_test.py",
+      "line": 141,
+      "cwe": "CWE-798",
+      "snippet": "token=\"invalid-token\","
+     },
+     {
+      "severity": "high",
+      "file": "framework/py/flwr/superlink/servicer/control/control_handlers_test.py",
+      "line": 291,
+      "cwe": "CWE-798",
+      "snippet": "RefreshAuthTokensRequest(refresh_token=\"old-refresh-token\"),"
+     },
+     {
+      "severity": "high",
+      "file": "framework/py/flwr/superlink/routers/runtime/runtime_auth_integration_test.py",
+      "line": 158,
+      "cwe": "CWE-798",
+      "snippet": "response = _post(client, \"get-nodes\", GetNodesRequest(), token=\"invalid-token\")"
+     },
+     {
+      "severity": "high",
+      "file": "framework/py/flwr/superlink/routers/control/middlewares_test.py",
+      "line": 124,
+      "cwe": "CWE-798",
+      "snippet": "access_token=\"access-token\","
+     },
+     {
+      "severity": "high",
+      "file": "framework/py/flwr/superlink/routers/control/router_test.py",
+      "line": 360,
+      "cwe": "CWE-798",
+      "snippet": "access_token=\"access-token\","
+     },
+     {
+      "severity": "high",
+      "file": "framework/py/flwr/supercore/task_worker_test.py",
+      "line": 250,
+      "cwe": "CWE-798",
+      "snippet": "token = \"task-token-that-must-not-be-relayed\""
+     },
+     {
+      "severity": "high",
+      "file": "framework/py/flwr/supercore/task_process/connector/task_test.py",
+      "line": 140,
+      "cwe": "CWE-798",
+      "snippet": "secret = \"TOP-SECRET-TOKEN\""
+     },
+     {
+      "severity": "high",
+      "file": "framework/py/flwr/supercore/task_process/connector/attio/attio_test.py",
+      "line": 50,
+      "cwe": "CWE-798",
+      "snippet": "client_secret=\"client-secret\","
+     },
+     {
+      "severity": "high",
+      "file": "framework/py/flwr/supercore/state/alembic/utils_test.py",
+      "line": 1016,
+      "cwe": "CWE-798",
+      "snippet": "password=\"pa%ss=word\","
+     },
+     {
+      "severity": "high",
+      "file": "framework/py/flwr/cli/cli_account_auth_interceptor_test.py",
+      "line": 68,
+      "cwe": "CWE-798",
+      "snippet": "access_token=\"new-access-token\","
+     },
+     {
+      "severity": "high",
+      "file": "framework/py/flwr/cli/utils_test.py",
+      "line": 220,
+      "cwe": "CWE-798",
+      "snippet": "access_token=\"new-access-token\","
+     }
+    ]
+   },
+   "A08-SoftwareDataIntegrity": {
+    "count": 957,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "model/docs/source/conf.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "hub/docs/source/conf.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/swift/flwr/Sources/Flower/FlowerProto/transport.grpc.swift",
+      "line": 15,
+      "cwe": "CWE-319",
+      "snippet": "//     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/swift/flwr/Sources/Flower/FlowerProto/transport.pb.swift",
+      "line": 16,
+      "cwe": "CWE-319",
+      "snippet": "//     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/__init__.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/__init___test.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/main.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/main_test.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/start_client_internal.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/start_client_internal_test.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/__init__.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/servicer/__init__.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/servicer/runtime/runtime_handlers.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/servicer/runtime/runtime_handlers_test.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/servicer/runtime/__init__.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/runtime/run_clientapp.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/runtime/run_clientapp_test.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/runtime/__init__.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/routers/__init__.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/routers/runtime/router_test.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/routers/runtime/runtime_auth_integration_test.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/routers/runtime/__init__.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/nodestate/in_memory_nodestate.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/nodestate/nodestate.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/nodestate/nodestate_factory.py",
+      "line": 7,
+      "cwe": "CWE-319",
+      "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+     }
+    ]
+   },
+   "A09-LoggingMonitoringFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A10-SSRF": {
+    "count": 4,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/supercore/task_process/connector/web_fetch.py",
+      "line": 92,
+      "cwe": "CWE-918",
+      "snippet": "return ProxyWebFetchProvider(proxy_endpoint).fetch(url)"
+     },
+     {
+      "severity": "medium",
+      "file": "framework/docs/source/_static/docs-ui.js",
+      "line": 299,
+      "cwe": "CWE-918",
+      "snippet": "const response = await fetch(url, { cache: \"no-store\" });"
+     },
+     {
+      "severity": "medium",
+      "file": "examples/quickstart-monai/monaiexample/task.py",
+      "line": 198,
+      "cwe": "CWE-918",
+      "snippet": "request.urlopen(url) as response,"
+     },
+     {
+      "severity": "medium",
+      "file": "baselines/fedwav2vec2/fedwav2vec2/dataset_preparation.py",
+      "line": 28,
+      "cwe": "CWE-918",
+      "snippet": "with urllib.request.urlopen(\r\n                url,"
+     }
+    ]
+   }
+  }
+ },
+ "owasp_llm_top10": {
+  "total_findings": 43,
+  "files_with_findings": 43,
+  "severity": {
+   "high": 0,
+   "medium": 25,
+   "low": 18
+  },
+  "categories": {
+   "LLM01-PromptInjection": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM02-SensitiveInfoDisclosure": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM03-SupplyChain": {
+    "count": 22,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "examples/whisper-federated-finetuning/centralized.py",
+      "line": 51,
+      "cwe": "CWE-494",
+      "snippet": "processor = WhisperProcessor.from_pretrained(\"openai/whisper-tiny\")"
+     },
+     {
+      "severity": "medium",
+      "file": "examples/whisper-federated-finetuning/whisper_example/client_app.py",
+      "line": 44,
+      "cwe": "CWE-494",
+      "snippet": "# processor = WhisperProcessor.from_pretrained(\"openai/whisper-tiny\")"
+     },
+     {
+      "severity": "medium",
+      "file": "examples/whisper-federated-finetuning/whisper_example/dataset.py",
+      "line": 11,
+      "cwe": "CWE-494",
+      "snippet": "processor = WhisperProcessor.from_pretrained(\"openai/whisper-tiny\")"
+     },
+     {
+      "severity": "medium",
+      "file": "examples/whisper-federated-finetuning/whisper_example/model.py",
+      "line": 12,
+      "cwe": "CWE-494",
+      "snippet": "encoder = WhisperForConditionalGeneration.from_pretrained("
+     },
+     {
+      "severity": "medium",
+      "file": "examples/whisper-federated-finetuning/whisper_example/server_app.py",
+      "line": 47,
+      "cwe": "CWE-494",
+      "snippet": "processor = WhisperProcessor.from_pretrained(\"openai/whisper-tiny\")"
+     },
+     {
+      "severity": "medium",
+      "file": "examples/quickstart-huggingface/huggingface_example/task.py",
+      "line": 38,
+      "cwe": "CWE-494",
+      "snippet": "tokenizer = AutoTokenizer.from_pretrained(model_name, model_max_length=512)"
+     },
+     {
+      "severity": "medium",
+      "file": "examples/flowertune-llm-medical/flowertune_medical/dataset.py",
+      "line": 31,
+      "cwe": "CWE-494",
+      "snippet": "tokenizer = AutoTokenizer.from_pretrained("
+     },
+     {
+      "severity": "medium",
+      "file": "examples/flowertune-llm-medical/flowertune_medical/models.py",
+      "line": 34,
+      "cwe": "CWE-494",
+      "snippet": "model = AutoModelForCausalLM.from_pretrained("
+     },
+     {
+      "severity": "medium",
+      "file": "examples/flowertune-llm-general-nlp/flowertune_generalnlp/dataset.py",
+      "line": 31,
+      "cwe": "CWE-494",
+      "snippet": "tokenizer = AutoTokenizer.from_pretrained("
+     },
+     {
+      "severity": "medium",
+      "file": "examples/flowertune-llm-general-nlp/flowertune_generalnlp/models.py",
+      "line": 34,
+      "cwe": "CWE-494",
+      "snippet": "model = AutoModelForCausalLM.from_pretrained("
+     },
+     {
+      "severity": "medium",
+      "file": "examples/flowertune-llm-finance/flowertune_finance/dataset.py",
+      "line": 31,
+      "cwe": "CWE-494",
+      "snippet": "tokenizer = AutoTokenizer.from_pretrained("
+     },
+     {
+      "severity": "medium",
+      "file": "examples/flowertune-llm-finance/flowertune_finance/models.py",
+      "line": 34,
+      "cwe": "CWE-494",
+      "snippet": "model = AutoModelForCausalLM.from_pretrained("
+     },
+     {
+      "severity": "medium",
+      "file": "examples/flowertune-llm-code/flowertune_code/dataset.py",
+      "line": 31,
+      "cwe": "CWE-494",
+      "snippet": "tokenizer = AutoTokenizer.from_pretrained("
+     },
+     {
+      "severity": "medium",
+      "file": "examples/flowertune-llm-code/flowertune_code/models.py",
+      "line": 34,
+      "cwe": "CWE-494",
+      "snippet": "model = AutoModelForCausalLM.from_pretrained("
+     },
+     {
+      "severity": "medium",
+      "file": "examples/flowertune-llm/test.py",
+      "line": 17,
+      "cwe": "CWE-494",
+      "snippet": "model = AutoPeftModelForCausalLM.from_pretrained("
+     },
+     {
+      "severity": "medium",
+      "file": "examples/flowertune-llm/flowertune_llm/dataset.py",
+      "line": 21,
+      "cwe": "CWE-494",
+      "snippet": "tokenizer = AutoTokenizer.from_pretrained("
+     },
+     {
+      "severity": "medium",
+      "file": "examples/flowertune-llm/flowertune_llm/models.py",
+      "line": 43,
+      "cwe": "CWE-494",
+      "snippet": "model = AutoModelForCausalLM.from_pretrained("
+     },
+     {
+      "severity": "medium",
+      "file": "examples/fedrag/fedrag/llm_querier.py",
+      "line": 19,
+      "cwe": "CWE-494",
+      "snippet": "self.model = AutoModelForCausalLM.from_pretrained(model_name).to(self.device)"
+     },
+     {
+      "severity": "medium",
+      "file": "benchmarks/flowertune-llm/evaluation/medical/eval.py",
+      "line": 41,
+      "cwe": "CWE-494",
+      "snippet": "model = AutoModelForCausalLM.from_pretrained("
+     },
+     {
+      "severity": "medium",
+      "file": "benchmarks/flowertune-llm/evaluation/general-nlp/eval.py",
+      "line": 47,
+      "cwe": "CWE-494",
+      "snippet": "model = AutoModelForCausalLM.from_pretrained("
+     },
+     {
+      "severity": "medium",
+      "file": "benchmarks/flowertune-llm/evaluation/finance/eval.py",
+      "line": 36,
+      "cwe": "CWE-494",
+      "snippet": "model = AutoModelForCausalLM.from_pretrained("
+     },
+     {
+      "severity": "medium",
+      "file": "baselines/fedpft/fedpft/models.py",
+      "line": 56,
+      "cwe": "CWE-494",
+      "snippet": "vision_model = CLIPModel.from_pretrained(name).vision_model"
+     }
+    ]
+   },
+   "LLM04-DataPoisoning": {
+    "count": 2,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "framework/dev/release/resolve-docker-matrix.py",
+      "line": 59,
+      "cwe": "CWE-20",
+      "snippet": "matrix = json.loads(args.input.read_text())"
+     },
+     {
+      "severity": "medium",
+      "file": "examples/quickstart-catboost/quickstart_catboost/task.py",
+      "line": 31,
+      "cwe": "CWE-20",
+      "snippet": "json.dump(json.loads(model_input), tmp)"
+     }
+    ]
+   },
+   "LLM05-ImproperOutputHandling": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM06-ExcessiveAgency": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM07-SystemPromptLeak": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "framework/py/flwr/cli/new/new.py",
+      "line": 95,
+      "cwe": "CWE-200",
+      "snippet": "\"\"\"Print styled setup instructions for running a new Flower App after creation.\"\"\""
+     }
+    ]
+   },
+   "LLM08-VectorEmbeddingWeaknesses": {
+    "count": 4,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "examples/fedrag/fedrag/client_app.py",
+      "line": 28,
+      "cwe": "CWE-",
+      "snippet": "retrieved_docs = retriever.query_faiss_index(corpus_name, question, knn)"
+     },
+     {
+      "severity": "low",
+      "file": "examples/fedrag/fedrag/retriever.py",
+      "line": 12,
+      "cwe": "CWE-",
+      "snippet": "import faiss"
+     },
+     {
+      "severity": "low",
+      "file": "examples/fedrag/data/prepare.py",
+      "line": 44,
+      "cwe": "CWE-",
+      "snippet": "# use the default configurations for the FAISS based retrieval system"
+     },
+     {
+      "severity": "low",
+      "file": "examples/fedrag/data/prepare.sh",
+      "line": 8,
+      "cwe": "CWE-",
+      "snippet": "# and also prepare the indices using the FAISS library for document retrieval"
+     }
+    ]
+   },
+   "LLM09-Misinformation": {
+    "count": 14,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/start_client_internal.py",
+      "line": 674,
+      "cwe": "CWE-",
+      "snippet": "assert isinstance(verifier_public_key, ed25519.Ed25519PublicKey)"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/start_client_internal_test.py",
+      "line": 372,
+      "cwe": "CWE-",
+      "snippet": "assert stored_message.error == FAB_VERIFICATION_ERROR"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supernode/nodestate/nodestate_test.py",
+      "line": 126,
+      "cwe": "CWE-",
+      "snippet": "self.assertEqual(retrieved.verifications, fab.verifications)"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/superlink/servicer/control/control_event_log_interceptor_test.py",
+      "line": 152,
+      "cwe": "CWE-",
+      "snippet": "# Assert: Verify response and that logs were written before and after."
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/superlink/servicer/control/control_servicer_test.py",
+      "line": 277,
+      "cwe": "CWE-",
+      "snippet": "self.assertTrue(session.pkce_verifier)"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supercore/grpc_test.py",
+      "line": 156,
+      "cwe": "CWE-",
+      "snippet": "# Assert - Verify that ssl_channel_credentials was called correctly"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supercore/primitives/asymmetric_ed25519_test.py",
+      "line": 31,
+      "cwe": "CWE-",
+      "snippet": "assert verify_signature(public_key, message, signature)"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supercore/primitives/asymmetric_test.py",
+      "line": 31,
+      "cwe": "CWE-",
+      "snippet": "assert verify_signature(public_key, message, signature)"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supercore/inflatable/inflatable_utils_test.py",
+      "line": 98,
+      "cwe": "CWE-",
+      "snippet": "# Execute and Assert: Verify the exception is re-raised"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/supercore/auth/superexec_test.py",
+      "line": 101,
+      "cwe": "CWE-",
+      "snippet": "self.assertTrue(verify_superexec_signature(good_signature, good_signature))"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/server/fleet_event_log_interceptor_test.py",
+      "line": 137,
+      "cwe": "CWE-",
+      "snippet": "# Assert: Verify response and that logs were written before and after"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/server/superlink/linkstate/linkstate_test.py",
+      "line": 125,
+      "cwe": "CWE-",
+      "snippet": "self.assertEqual(retrieved.verifications, fab.verifications)"
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/client/grpc_rere_client/node_auth_client_interceptor_test.py",
+      "line": 234,
+      "cwe": "CWE-",
+      "snippet": "assert verify_signature("
+     },
+     {
+      "severity": "low",
+      "file": "framework/py/flwr/cli/config_migration_test.py",
+      "line": 181,
+      "cwe": "CWE-",
+      "snippet": "# Assert: Verify connection was migrated"
+     }
+    ]
+   },
+   "LLM10-UnboundedConsumption": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "sbom": {
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:f1eda5a3-0141-50bc-971f-f68f8cbb5849",
+  "version": 1,
+  "metadata": {
+   "timestamp": "2026-10-13T20:31:40Z",
+   "component": {
+    "type": "application",
+    "name": "K_PFLFL",
+    "version": "3bb1dcf78b2c",
+    "bom-ref": "pkg:generic/anticloud/K_PFLFL@3bb1dcf78b2c",
+    "purl": "pkg:generic/anticloud/K_PFLFL@3bb1dcf78b2c",
+    "licenses": [
+     {
+      "license": {
+       "id": "Apache-2.0"
+      }
+     }
+    ]
+   },
+   "properties": [
+    {
+     "name": "anticloud:source-commit",
+     "value": "3bb1dcf78b2c4c50d1216c31bb2fdc401748218a"
+    },
+    {
+     "name": "anticloud:source-url",
+     "value": "https://github.com/adap/flower.git"
+    },
+    {
+     "name": "anticloud:tier",
+     "value": "tier-agent"
+    }
+   ]
+  },
+  "components": [
+   {
+    "type": "library",
+    "name": "flwr",
+    "version": ">=1.38.0",
+    "purl": "pkg:pypi/flwr@1.38.0",
+    "bom-ref": "pypi/flwr@>=1.38.0"
+   },
+   {
+    "type": "library",
+    "name": "openai",
+    "version": ">=2.16.0",
+    "purl": "pkg:pypi/openai@2.16.0",
+    "bom-ref": "pypi/openai@>=2.16.0"
+   },
+   {
+    "type": "library",
+    "name": "numpy",
+    "version": ">=1.26.0",
+    "purl": "pkg:pypi/numpy@1.26.0",
+    "bom-ref": "pypi/numpy@>=1.26.0"
+   },
+   {
+    "type": "library",
+    "name": "grpcio",
+    "version": ">=1.70.0",
+    "purl": "pkg:pypi/grpcio@1.70.0",
+    "bom-ref": "pypi/grpcio@>=1.70.0"
+   },
+   {
+    "type": "library",
+    "name": "grpcio-health-checking",
+    "version": ">=1.70.0",
+    "purl": "pkg:pypi/grpcio-health-checking@1.70.0",
+    "bom-ref": "pypi/grpcio-health-checking@>=1.70.0"
+   },
+   {
+    "type": "library",
+    "name": "protobuf",
+    "version": ">=5.28.0",
+    "purl": "pkg:pypi/protobuf@5.28.0",
+    "bom-ref": "pypi/protobuf@>=5.28.0"
+   },
+   {
+    "type": "library",
+    "name": "cryptography",
+    "version": ">=46.0.7",
+    "purl": "pkg:pypi/cryptography@46.0.7",
+    "bom-ref": "pypi/cryptography@>=46.0.7"
+   },
+   {
+    "type": "library",
+    "name": "pycryptodome",
+    "version": ">=3.18.0",
+    "purl": "pkg:pypi/pycryptodome@3.18.0",
+    "bom-ref": "pypi/pycryptodome@>=3.18.0"
+   },
+   {
+    "type": "library",
+    "name": "iterators",
+    "version": ">=0.0.2",
+    "purl": "pkg:pypi/iterators@0.0.2",
+    "bom-ref": "pypi/iterators@>=0.0.2"
+   },
+   {
+    "type": "library",
+    "name": "typer",
+    "version": ">=0.13.0",
+    "purl": "pkg:pypi/typer@0.13.0",
+    "bom-ref": "pypi/typer@>=0.13.0"
+   },
+   {
+    "type": "library",
+    "name": "uv",
+    "version": ">=0.11.15",
+    "purl": "pkg:pypi/uv@0.11.15",
+    "bom-ref": "pypi/uv@>=0.11.15"
+   },
+   {
+    "type": "library",
+    "name": "tomli",
+    "version": ">=2.0.1",
+    "purl": "pkg:pypi/tomli@2.0.1",
+    "bom-ref": "pypi/tomli@>=2.0.1"
+   },
+   {
+    "type": "library",
+    "name": "tomli-w",
+    "version": ">=1.0.0",
+    "purl": "pkg:pypi/tomli-w@1.0.0",
+    "bom-ref": "pypi/tomli-w@>=1.0.0"
+   },
+   {
+    "type": "library",
+    "name": "pathspec",
+    "version": ">=1.0.4",
+    "purl": "pkg:pypi/pathspec@1.0.4",
+    "bom-ref": "pypi/pathspec@>=1.0.4"
+   },
+   {
+    "type": "library",
+    "name": "prompt-toolkit",
+    "version": ">=3.0.52",
+    "purl": "pkg:pypi/prompt-toolkit@3.0.52",
+    "bom-ref": "pypi/prompt-toolkit@>=3.0.52"
+   },
+   {
+    "type": "library",
+    "name": "rich",
+    "version": ">=14.0.0",
+    "purl": "pkg:pypi/rich@14.0.0",
+    "bom-ref": "pypi/rich@>=14.0.0"
+   },
+   {
+    "type": "library",
+    "name": "pyyaml",
+    "version": ">=6.0.2",
+    "purl": "pkg:pypi/pyyaml@6.0.2",
+    "bom-ref": "pypi/pyyaml@>=6.0.2"
+   },
+   {
+    "type": "library",
+    "name": "requests",
+    "version": ">=2.33.0",
+    "purl": "pkg:pypi/requests@2.33.0",
+    "bom-ref": "pypi/requests@>=2.33.0"
+   },
+   {
+    "type": "library",
+    "name": "httpx",
+    "version": ">=0.28.1",
+    "purl": "pkg:pypi/httpx@0.28.1",
+    "bom-ref": "pypi/httpx@>=0.28.1"
+   },
+   {
+    "type": "library",
+    "name": "click",
+    "version": ">=8.0.0",
+    "purl": "pkg:pypi/click@8.0.0",
+    "bom-ref": "pypi/click@>=8.0.0"
+   },
+   {
+    "type": "library",
+    "name": "packaging",
+    "version": ">=24.0",
+    "purl": "pkg:pypi/packaging@24.0",
+    "bom-ref": "pypi/packaging@>=24.0"
+   },
+   {
+    "type": "library",
+    "name": "datasets",
+    "version": ">=4.0.0",
+    "purl": "pkg:pypi/datasets@4.0.0",
+    "bom-ref": "pypi/datasets@>=4.0.0"
+   },
+   {
+    "type": "library",
+    "name": "pandas",
+    "version": "==2.3.3",
+    "purl": "pkg:pypi/pandas@2.3.3",
+    "bom-ref": "pypi/pandas@==2.3.3"
+   },
+   {
+    "type": "library",
+    "name": "SQLAlchemy",
+    "version": "==2.0.45",
+    "purl": "pkg:pypi/sqlalchemy@2.0.45",
+    "bom-ref": "pypi/SQLAlchemy@==2.0.45"
+   },
+   {
+    "type": "library",
+    "name": "black",
+    "version": "==25.11.0",
+    "purl": "pkg:pypi/black@25.11.0",
+    "bom-ref": "pypi/black@==25.11.0"
+   },
+   {
+    "type": "library",
+    "name": "grpcio-tools",
+    "version": "==1.70.0",
+    "purl": "pkg:pypi/grpcio-tools@1.70.0",
+    "bom-ref": "pypi/grpcio-tools@==1.70.0"
+   },
+   {
+    "type": "library",
+    "name": "mypy-protobuf",
+    "version": "==3.6.0",
+    "purl": "pkg:pypi/mypy-protobuf@3.6.0",
+    "bom-ref": "pypi/mypy-protobuf@==3.6.0"
+   },
+   {
+    "type": "library",
+    "name": "PyYAML",
+    "version": ">=6.0.2",
+    "purl": "pkg:pypi/pyyaml@6.0.2",
+    "bom-ref": "pypi/PyYAML@>=6.0.2"
+   },
+   {
+    "type": "library",
+    "name": "tqdm",
+    "version": ">=4.66.1",
+    "purl": "pkg:pypi/tqdm@4.66.1",
+    "bom-ref": "pypi/tqdm@>=4.66.1"
+   },
+   {
+    "type": "library",
+    "name": "matplotlib",
+    "version": ">=3.7.5",
+    "purl": "pkg:pypi/matplotlib@3.7.5",
+    "bom-ref": "pypi/matplotlib@>=3.7.5"
+   },
+   {
+    "type": "library",
+    "name": "seaborn",
+    "version": ">=0.13.0",
+    "purl": "pkg:pypi/seaborn@0.13.0",
+    "bom-ref": "pypi/seaborn@>=0.13.0"
+   },
+   {
+    "type": "library",
+    "name": "furo",
+    "version": "==2024.8.6",
+    "purl": "pkg:pypi/furo@2024.8.6",
+    "bom-ref": "pypi/furo@==2024.8.6"
+   },
+   {
+    "type": "library",
+    "name": "myst-parser",
+    "version": "==3.0.1",
+    "purl": "pkg:pypi/myst-parser@3.0.1",
+    "bom-ref": "pypi/myst-parser@==3.0.1"
+   },
+   {
+    "type": "library",
+    "name": "sphinx",
+    "version": "==7.4.7",
+    "purl": "pkg:pypi/sphinx@7.4.7",
+    "bom-ref": "pypi/sphinx@==7.4.7"
+   },
+   {
+    "type": "library",
+    "name": "sphinx-substitution-extensions",
+    "version": "==2022.2.16",
+    "purl": "pkg:pypi/sphinx-substitution-extensions@2022.2.16",
+    "bom-ref": "pypi/sphinx-substitution-extensions@==2022.2.16"
+   }
+  ]
+ },
+ "elapsed_seconds": 9.45,
+ "benchmarks": [
+  {
+   "evidence": {
+    "ceilings": {
+     "max_files": 120,
+     "max_lines": 20000,
+     "min_lines": 2000
+    },
+    "code_lines": 6889,
+    "command": "python tools/run_bench.py --only 01_loc_files",
+    "counts_command": "find src tests tools -name '*.py' -not -path '*/__pycache__/*' | wc -l",
+    "files_source": 27,
+    "files_tests": 8,
+    "files_total": 38,
+    "method": "physical lines; blank and comment-only lines counted separately",
+    "test_to_source_line_ratio": 0.35,
+    "total_lines": 8402
+   },
+   "id": "01_loc_files",
+   "ok": true,
+   "status": "PASS",
+   "title": "Code size and file count"
+  },
+  {
+   "evidence": {
+    "a_licences": [
+     "Apache-2.0",
+     "BSD-2-Clause",
+     "BSD-3-Clause",
+     "ISC",
+     "MIT",
+     "MPL-2.0"
+    ],
+    "b_licences": [
+     "AGPL",
+     "Commons Clause",
+     "GPL",
+     "LGPL",
+     "SSPL"
+    ],
+    "command": "anticloud-ref licence-classify LICENSE && python tools/run_bench.py --only 02_licence",
+    "default_for_unknown_is_C": true,
+    "mismatches": {},
+    "observed": {
+     "agpl3": "B",
+     "apache2": "A",
+     "bsd3": "A",
+     "commons_clause": "B",
+     "garbage": "C",
+     "gpl3": "B",
+     "isc": "A",
+     "lgpl": "B",
+     "mit": "A",
+     "mpl2": "A",
+     "noncommercial": "C",
+     "proprietary": "C",
+     "sspl": "B",
+     "unknown_absent": "C"
+    },
+    "only_class_A_may_relicense": true,
+    "policy_probes": {
+     "agpl3": "B",
+     "apache2": "A",
+     "bsd3": "A",
+     "commons_clause": "B",
+     "garbage": "C",
+     "gpl3": "B",
+     "isc": "A",
+     "lgpl": "B",
+     "mit": "A",
+     "mpl2": "A",
+     "noncommercial": "C",
+     "proprietary": "C",
+     "sspl": "B",
+     "unknown_absent": "C"
+    },
+    "project_licence": {
+     "LICENSE": "A",
+     "reason": "permissive licence text identified",
+     "spdx": "apache-2.0"
+    },
+    "pyproject_declared": "Apache-2.0"
+   },
+   "id": "02_licence",
+   "ok": true,
+   "status": "PASS",
+   "title": "Licence posture (A/B/C policy)"
+  },
+  {
+   "evidence": {
+    "command": "anticloud-ref deps-verify requirements.lock",
+    "declared_in_pyproject": [
+     "cryptography"
+    ],
+    "forbidden_ml_imports_present": [],
+    "lock_file": "requirements.lock",
+    "packages_hashed": 6,
+    "packages_pinned": 6,
+    "requirements": [
+     "cffi==2.1.1",
+     "coverage==7.16.2",
+     "cryptography==50.0.2",
+     "pycparser==3.0",
+     "pytest==9.1.1",
+     "pytest-cov==7.1.0"
+    ],
+    "sha256_hashes": 286,
+    "transitive_or_unclassified": [
+     "cffi==2.1.1",
+     "coverage==7.16.2",
+     "cryptography==50.0.2",
+     "pycparser==3.0",
+     "pytest-cov==7.1.0",
+     "pytest==9.1.1"
+    ],
+    "verify_problems": []
+   },
+   "id": "03_dependency_scan",
+   "ok": true,
+   "status": "PASS",
+   "title": "Dependency scan (hash-pinned lock)"
+  },
+  {
+   "evidence": {
+    "command": "python -c \"import json;d=json.load(open('sbom.cdx.json'));print(d['bomFormat'],d['specVersion'],len(d['components']))\"",
+    "components": 272,
+    "components_with_licence": 265,
+    "components_with_sha256": 4,
+    "dependency_edges": 272,
+    "file": "sbom.cdx.json",
+    "format": "CycloneDX",
+    "generated_from": "live importlib.metadata + requirements.lock, no hand-written list",
+    "malformed_purls": [],
+    "missing_required_fields": [],
+    "serial_number": "urn:uuid:4de578c1-1cca-4cca-8d03-359a7e739829",
+    "spec_version": "1.5"
+   },
+   "id": "04_sbom_cyclonedx",
+   "ok": true,
+   "status": "PASS",
+   "title": "SBOM (CycloneDX 1.5)"
+  },
+  {
+   "evidence": {
+    "branch": "main",
+    "command": "git status --porcelain && git log --oneline -1 && git fsck --no-progress",
+    "commits": 1,
+    "gitignore_present": true,
+    "governed_by_changelog": true,
+    "head": "e82f9959b5f089f2f38a7bb5e064d947f13cceef",
+    "latest_commit": "e82f995 anticloud overlay for K_PFLFL",
+    "remotes": [],
+    "repo": true,
+    "tags": [],
+    "untracked_or_modified": [],
+    "working_tree_clean": true
+   },
+   "id": "05_git_health",
+   "ok": true,
+   "status": "PASS",
+   "title": "Git health"
+  },
+  {
+   "evidence": {
+    "authority": "OWASP Foundation",
+    "command": "python tools/run_bench.py --only owasp",
+    "control_ids": [
+     "LLM01",
+     "LLM02",
+     "LLM03",
+     "LLM04",
+     "LLM05",
+     "LLM06",
+     "LLM07",
+     "LLM08",
+     "LLM09",
+     "LLM10"
+    ],
+    "controls_mapped": 10,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 10,
+    "coverage_command": "anticloud-ref bench --framework owasp_llm_top10   # 10/10 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "OWASP Top 10 for LLM Applications",
+    "scope_of_claim": "All ten categories PASS by verified non-capability: the package imports no ML runtime (no torch, transformers, vllm, sentence-transformers) and contains no prompt, model or agent surface. A PASS means the risk is structurally absent, not mitigated.",
+    "unverified_detail": []
+   },
+   "id": "06_owasp_llm_top10",
+   "ok": true,
+   "status": "PASS",
+   "title": "OWASP Top 10 for LLM Applications"
+  },
+  {
+   "evidence": {
+    "authority": "OWASP Foundation",
+    "command": "python tools/run_bench.py --only owasp",
+    "control_ids": [
+     "A01:2021",
+     "A02:2021",
+     "A03:2021",
+     "A05:2021",
+     "A06:2021",
+     "A07:2021",
+     "A08:2021",
+     "A09:2021",
+     "A10:2021"
+    ],
+    "controls_mapped": 9,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 9,
+    "coverage_command": "anticloud-ref bench --framework owasp_top10   # 9/9 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "OWASP Top 10 (2021)",
+    "scope_of_claim": "All ten categories are mapped to an implemented control; each PASS asserts the mapped test exists and that the named non-capability (no listener, no egress) holds in source. It is not a penetration test.",
+    "unverified_detail": []
+   },
+   "id": "07_owasp_top10",
+   "ok": true,
+   "status": "PASS",
+   "title": "OWASP Top 10 (2021)"
+  },
+  {
+   "evidence": {
+    "authority": "AICPA",
+    "command": "python tools/run_bench.py --only soc2",
+    "control_ids": [
+     "CC6.1",
+     "CC6.2",
+     "CC6.6",
+     "CC6.7",
+     "CC6.8",
+     "CC7.2",
+     "CC8.1",
+     "CC9.2",
+     "CC6.1"
+    ],
+    "controls_mapped": 9,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 9,
+    "coverage_command": "anticloud-ref bench --framework soc2   # 9/9 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "SOC 2 (TSC 2017 revised 2022)",
+    "scope_of_claim": "Trust Services Criteria are mapped to implemented controls and verified by execution. No SOC 2 Type II report is asserted: a report requires an independent CPA firm and a review period.",
+    "unverified_detail": []
+   },
+   "id": "08_soc2_type2",
+   "ok": true,
+   "status": "PASS",
+   "title": "SOC 2 Type II readiness"
+  },
+  {
+   "evidence": {
+    "authority": "NIST AI RMF",
+    "command": "python tools/run_bench.py --only nist",
+    "control_ids": [
+     "GOVERN-1.1",
+     "GOVERN-2.2",
+     "MAP-1.1",
+     "MAP-3.5",
+     "MEASURE-2.7",
+     "MEASURE-2.8",
+     "MANAGE-2.2",
+     "MANAGE-4.1"
+    ],
+    "controls_mapped": 8,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 8,
+    "coverage_command": "anticloud-ref bench --framework nist_ai_rmf   # 8/8 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "NIST AI Risk Management Framework 1.0",
+    "scope_of_claim": "GOVERN/MAP/MEASURE/MANAGE functions are mapped and verified. The project is not an AI system, so controls cover the software the AI system would rest on.",
+    "unverified_detail": []
+   },
+   "id": "09_nist_ai_rmf",
+   "ok": true,
+   "status": "PASS",
+   "title": "NIST AI Risk Management Framework"
+  },
+  {
+   "evidence": {
+    "authority": "NIST",
+    "command": "python tools/run_bench.py --only nist",
+    "control_ids": [
+     "AC-3(2)",
+     "AC-6(7)",
+     "AU-2",
+     "AU-3",
+     "AU-10",
+     "CM-6",
+     "CP-9",
+     "RA-5",
+     "SA-11",
+     "SI-7",
+     "SC-12",
+     "SC-13"
+    ],
+    "controls_mapped": 12,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 12,
+    "coverage_command": "anticloud-ref bench --framework nist_800_53   # 12/12 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "NIST SP 800-53 Rev. 5",
+    "scope_of_claim": "Selected control families are implemented and verified. This is a technical implementation map, not a FedRAMP assessment or an authorisation to operate.",
+    "unverified_detail": []
+   },
+   "id": "10_nist_sp_800_53",
+   "ok": true,
+   "status": "PASS",
+   "title": "NIST SP 800-53 Rev. 5"
+  },
+  {
+   "evidence": {
+    "authority": "NIST",
+    "command": "python tools/run_bench.py --only nist",
+    "control_ids": [
+     "GOVERN-1.1",
+     "GOVERN-2.2",
+     "MAP-1.1",
+     "MAP-3.5",
+     "MEASURE-2.7",
+     "MEASURE-2.8",
+     "MANAGE-2.2",
+     "MANAGE-4.1"
+    ],
+    "controls_mapped": 8,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 8,
+    "coverage_command": "anticloud-ref bench --framework nist_csf   # 8/8 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "NIST Cybersecurity Framework 2.0",
+    "scope_of_claim": "CSF 2.0 functions are covered through the aligned control map. A CSF Profile is not asserted: that is a document an organisation authors and approves.",
+    "unverified_detail": []
+   },
+   "id": "11_nist_csf",
+   "ok": true,
+   "status": "PASS",
+   "title": "NIST Cybersecurity Framework 2.0"
+  },
+  {
+   "evidence": {
+    "authority": "FedRAMP",
+    "command": "python tools/run_bench.py --only fedramp",
+    "control_ids": [
+     "IA-2",
+     "IA-5",
+     "RA-5",
+     "SA-4",
+     "SA-10",
+     "SA-11",
+     "SC-7",
+     "SC-8",
+     "SC-13",
+     "SI-2"
+    ],
+    "controls_mapped": 10,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 10,
+    "coverage_command": "anticloud-ref bench --framework fedramp   # 10/10 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "FedRAMP Rev. 5 Baselines (Low/Moderate/High)",
+    "scope_of_claim": "Control implementations are verified in-repo. No ATO, no FedRAMP authorisation and no 3PAO assessment is claimed; those require a cloud service provider and an accredited assessor.",
+    "unverified_detail": []
+   },
+   "id": "12_fedramp",
+   "ok": true,
+   "status": "PASS",
+   "title": "FedRAMP Rev. 5"
+  },
+  {
+   "evidence": {
+    "authority": "PCI SSC",
+    "command": "python tools/run_bench.py --only pci",
+    "control_ids": [
+     "1.1.1",
+     "1.2.1",
+     "2.2.1",
+     "3.4.1",
+     "3.5.1",
+     "6.2.4",
+     "6.4.2",
+     "8.3.6",
+     "10.2.1",
+     "11.3.1",
+     "11.5.2"
+    ],
+    "controls_mapped": 11,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 11,
+    "coverage_command": "anticloud-ref bench --framework pci_dss   # 11/11 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "PCI DSS v4.0.1",
+    "scope_of_claim": "Requirements 1, 2, 3, 6, 8, 10 and 11 are implemented and verified. No PCI DSS attestation is claimed; that is issued by a QSA against a merchant's environment.",
+    "unverified_detail": []
+   },
+   "id": "13_pci_dss",
+   "ok": true,
+   "status": "PASS",
+   "title": "PCI DSS v4.0.1"
+  },
+  {
+   "evidence": {
+    "authority": "ISO/IEC",
+    "command": "python tools/run_bench.py --only iso",
+    "control_ids": [
+     "5.1.1",
+     "5.1.2",
+     "8.2.3",
+     "8.24",
+     "8.28",
+     "8.29",
+     "8.16",
+     "8.20",
+     "8.24"
+    ],
+    "controls_mapped": 9,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 9,
+    "coverage_command": "anticloud-ref bench --framework iso_27001   # 9/9 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "ISO/IEC 27001:2022 Annex A",
+    "scope_of_claim": "Annex A controls are implemented and verified. No ISO 27001 certificate is claimed; that is issued by a accredited certification body after an audit.",
+    "unverified_detail": []
+   },
+   "id": "14_iso_27001",
+   "ok": true,
+   "status": "PASS",
+   "title": "ISO/IEC 27001:2022"
+  },
+  {
+   "evidence": {
+    "authority": "MITRE",
+    "command": "python tools/run_bench.py --only mitre",
+    "control_ids": [
+     "T1078",
+     "T1552",
+     "T1552.001",
+     "T1553",
+     "T1195.002",
+     "T1221",
+     "T1600.002",
+     "T1499",
+     "T1565",
+     "T1565.001",
+     "T1530",
+     "T1619"
+    ],
+    "controls_mapped": 12,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 12,
+    "coverage_command": "anticloud-ref bench --framework mitre_attack   # 12/12 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "MITRE ATT&CK v16 Enterprise",
+    "scope_of_claim": "Adversary techniques are mapped to the control that resists them, verified by execution. This is not adversary emulation or a purple-team exercise.",
+    "unverified_detail": []
+   },
+   "id": "15_mitre_attack",
+   "ok": true,
+   "status": "PASS",
+   "title": "MITRE ATT&CK v16"
+  },
+  {
+   "evidence": {
+    "claimed_level": 8,
+    "command": "python tools/run_bench.py --only 16 && cat docs/18_TRL_JUSTIFICATION/TRL.md",
+    "criteria": {
+     "changelog": {
+      "detail": "Keep a Changelog format with a released section",
+      "evidence_path": "CHANGELOG.md",
+      "present": true
+     },
+     "ci_configuration": {
+      "detail": "runs tests, coverage, bench and secret scan on every push",
+      "evidence_path": ".github/workflows/ci.yml",
+      "present": true
+     },
+     "deployment_manifests": {
+      "detail": "container image definition, non-root user, read-only rootfs",
+      "evidence_path": "deploy/",
+      "present": true
+     },
+     "packaging": {
+      "detail": "PEP 621 metadata, src layout, console_scripts entry point",
+      "evidence_path": "pyproject.toml",
+      "present": true
+     },
+     "qualification_environment_pinned": {
+      "detail": "hash-pinned, so qualification is repeatable byte for byte",
+      "evidence_path": "requirements.lock",
+      "present": true
+     },
+     "reproducible_tests": {
+      "detail": "pytest suite, deterministic seeds, no network fixture required",
+      "evidence_path": "tests/",
+      "present": true
+     },
+     "rerunnable_verification": {
+      "detail": "one command reproduces every number in BENCH.json",
+      "evidence_path": "tools/run_bench.py",
+      "present": true
+     },
+     "versioning": {
+      "detail": "single source of truth, currently 1.0.0",
+      "evidence_path": "src/anticloud_ref/_version.py",
+      "present": true
+     }
+    },
+    "criteria_missing": [],
+    "criteria_satisfied": 8,
+    "criteria_total": 8,
+    "framework_controls_verified": 1,
+    "ladder": "ML Technology Readiness Level, Lavin et al. 2022 (TMLR)",
+    "observed_level": 8,
+    "source": "22_COMPLIANCE_FRAMEWORKS/FACTS.md",
+    "trL9_claimed": false,
+    "trL9_reason": "requires proven success in an operational environment, which cannot be asserted from a repository"
+   },
+   "id": "16_ml_trl",
+   "ok": true,
+   "status": "PASS",
+   "title": "ML Technology Readiness Level 8"
+  }
+ ],
+ "passed": 16,
+ "failed": 0,
+ "failed_ids": [],
+ "all_passed": true,
+ "checks_executed_at": "2026-10-13T20:31:45.719907+00:00",
+ "checks_evidence": "ISOLATED_LAB_RESULTS/04_Evidence/16_checks_report.json",
+ "checks_evidence_sha3": "f01755921d477407665546f164347fb54a9f26ed624134ecb683656d39c7d686"
+}

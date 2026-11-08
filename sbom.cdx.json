@@ -1,0 +1,284 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:f1eda5a3-0141-50bc-971f-f68f8cbb5849",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-13T20:31:40Z",
+    "component": {
+      "type": "application",
+      "name": "K_PFLFL",
+      "version": "3bb1dcf78b2c",
+      "bom-ref": "pkg:generic/anticloud/K_PFLFL@3bb1dcf78b2c",
+      "purl": "pkg:generic/anticloud/K_PFLFL@3bb1dcf78b2c",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": "3bb1dcf78b2c4c50d1216c31bb2fdc401748218a"
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": "https://github.com/adap/flower.git"
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "flwr",
+      "version": ">=1.38.0",
+      "purl": "pkg:pypi/flwr@1.38.0",
+      "bom-ref": "pypi/flwr@>=1.38.0"
+    },
+    {
+      "type": "library",
+      "name": "openai",
+      "version": ">=2.16.0",
+      "purl": "pkg:pypi/openai@2.16.0",
+      "bom-ref": "pypi/openai@>=2.16.0"
+    },
+    {
+      "type": "library",
+      "name": "numpy",
+      "version": ">=1.26.0",
+      "purl": "pkg:pypi/numpy@1.26.0",
+      "bom-ref": "pypi/numpy@>=1.26.0"
+    },
+    {
+      "type": "library",
+      "name": "grpcio",
+      "version": ">=1.70.0",
+      "purl": "pkg:pypi/grpcio@1.70.0",
+      "bom-ref": "pypi/grpcio@>=1.70.0"
+    },
+    {
+      "type": "library",
+      "name": "grpcio-health-checking",
+      "version": ">=1.70.0",
+      "purl": "pkg:pypi/grpcio-health-checking@1.70.0",
+      "bom-ref": "pypi/grpcio-health-checking@>=1.70.0"
+    },
+    {
+      "type": "library",
+      "name": "protobuf",
+      "version": ">=5.28.0",
+      "purl": "pkg:pypi/protobuf@5.28.0",
+      "bom-ref": "pypi/protobuf@>=5.28.0"
+    },
+    {
+      "type": "library",
+      "name": "cryptography",
+      "version": ">=46.0.7",
+      "purl": "pkg:pypi/cryptography@46.0.7",
+      "bom-ref": "pypi/cryptography@>=46.0.7"
+    },
+    {
+      "type": "library",
+      "name": "pycryptodome",
+      "version": ">=3.18.0",
+      "purl": "pkg:pypi/pycryptodome@3.18.0",
+      "bom-ref": "pypi/pycryptodome@>=3.18.0"
+    },
+    {
+      "type": "library",
+      "name": "iterators",
+      "version": ">=0.0.2",
+      "purl": "pkg:pypi/iterators@0.0.2",
+      "bom-ref": "pypi/iterators@>=0.0.2"
+    },
+    {
+      "type": "library",
+      "name": "typer",
+      "version": ">=0.13.0",
+      "purl": "pkg:pypi/typer@0.13.0",
+      "bom-ref": "pypi/typer@>=0.13.0"
+    },
+    {
+      "type": "library",
+      "name": "uv",
+      "version": ">=0.11.15",
+      "purl": "pkg:pypi/uv@0.11.15",
+      "bom-ref": "pypi/uv@>=0.11.15"
+    },
+    {
+      "type": "library",
+      "name": "tomli",
+      "version": ">=2.0.1",
+      "purl": "pkg:pypi/tomli@2.0.1",
+      "bom-ref": "pypi/tomli@>=2.0.1"
+    },
+    {
+      "type": "library",
+      "name": "tomli-w",
+      "version": ">=1.0.0",
+      "purl": "pkg:pypi/tomli-w@1.0.0",
+      "bom-ref": "pypi/tomli-w@>=1.0.0"
+    },
+    {
+      "type": "library",
+      "name": "pathspec",
+      "version": ">=1.0.4",
+      "purl": "pkg:pypi/pathspec@1.0.4",
+      "bom-ref": "pypi/pathspec@>=1.0.4"
+    },
+    {
+      "type": "library",
+      "name": "prompt-toolkit",
+      "version": ">=3.0.52",
+      "purl": "pkg:pypi/prompt-toolkit@3.0.52",
+      "bom-ref": "pypi/prompt-toolkit@>=3.0.52"
+    },
+    {
+      "type": "library",
+      "name": "rich",
+      "version": ">=14.0.0",
+      "purl": "pkg:pypi/rich@14.0.0",
+      "bom-ref": "pypi/rich@>=14.0.0"
+    },
+    {
+      "type": "library",
+      "name": "pyyaml",
+      "version": ">=6.0.2",
+      "purl": "pkg:pypi/pyyaml@6.0.2",
+      "bom-ref": "pypi/pyyaml@>=6.0.2"
+    },
+    {
+      "type": "library",
+      "name": "requests",
+      "version": ">=2.33.0",
+      "purl": "pkg:pypi/requests@2.33.0",
+      "bom-ref": "pypi/requests@>=2.33.0"
+    },
+    {
+      "type": "library",
+      "name": "httpx",
+      "version": ">=0.28.1",
+      "purl": "pkg:pypi/httpx@0.28.1",
+      "bom-ref": "pypi/httpx@>=0.28.1"
+    },
+    {
+      "type": "library",
+      "name": "click",
+      "version": ">=8.0.0",
+      "purl": "pkg:pypi/click@8.0.0",
+      "bom-ref": "pypi/click@>=8.0.0"
+    },
+    {
+      "type": "library",
+      "name": "packaging",
+      "version": ">=24.0",
+      "purl": "pkg:pypi/packaging@24.0",
+      "bom-ref": "pypi/packaging@>=24.0"
+    },
+    {
+      "type": "library",
+      "name": "datasets",
+      "version": ">=4.0.0",
+      "purl": "pkg:pypi/datasets@4.0.0",
+      "bom-ref": "pypi/datasets@>=4.0.0"
+    },
+    {
+      "type": "library",
+      "name": "pandas",
+      "version": "==2.3.3",
+      "purl": "pkg:pypi/pandas@2.3.3",
+      "bom-ref": "pypi/pandas@==2.3.3"
+    },
+    {
+      "type": "library",
+      "name": "SQLAlchemy",
+      "version": "==2.0.45",
+      "purl": "pkg:pypi/sqlalchemy@2.0.45",
+      "bom-ref": "pypi/SQLAlchemy@==2.0.45"
+    },
+    {
+      "type": "library",
+      "name": "black",
+      "version": "==25.11.0",
+      "purl": "pkg:pypi/black@25.11.0",
+      "bom-ref": "pypi/black@==25.11.0"
+    },
+    {
+      "type": "library",
+      "name": "grpcio-tools",
+      "version": "==1.70.0",
+      "purl": "pkg:pypi/grpcio-tools@1.70.0",
+      "bom-ref": "pypi/grpcio-tools@==1.70.0"
+    },
+    {
+      "type": "library",
+      "name": "mypy-protobuf",
+      "version": "==3.6.0",
+      "purl": "pkg:pypi/mypy-protobuf@3.6.0",
+      "bom-ref": "pypi/mypy-protobuf@==3.6.0"
+    },
+    {
+      "type": "library",
+      "name": "PyYAML",
+      "version": ">=6.0.2",
+      "purl": "pkg:pypi/pyyaml@6.0.2",
+      "bom-ref": "pypi/PyYAML@>=6.0.2"
+    },
+    {
+      "type": "library",
+      "name": "tqdm",
+      "version": ">=4.66.1",
+      "purl": "pkg:pypi/tqdm@4.66.1",
+      "bom-ref": "pypi/tqdm@>=4.66.1"
+    },
+    {
+      "type": "library",
+      "name": "matplotlib",
+      "version": ">=3.7.5",
+      "purl": "pkg:pypi/matplotlib@3.7.5",
+      "bom-ref": "pypi/matplotlib@>=3.7.5"
+    },
+    {
+      "type": "library",
+      "name": "seaborn",
+      "version": ">=0.13.0",
+      "purl": "pkg:pypi/seaborn@0.13.0",
+      "bom-ref": "pypi/seaborn@>=0.13.0"
+    },
+    {
+      "type": "library",
+      "name": "furo",
+      "version": "==2024.8.6",
+      "purl": "pkg:pypi/furo@2024.8.6",
+      "bom-ref": "pypi/furo@==2024.8.6"
+    },
+    {
+      "type": "library",
+      "name": "myst-parser",
+      "version": "==3.0.1",
+      "purl": "pkg:pypi/myst-parser@3.0.1",
+      "bom-ref": "pypi/myst-parser@==3.0.1"
+    },
+    {
+      "type": "library",
+      "name": "sphinx",
+      "version": "==7.4.7",
+      "purl": "pkg:pypi/sphinx@7.4.7",
+      "bom-ref": "pypi/sphinx@==7.4.7"
+    },
+    {
+      "type": "library",
+      "name": "sphinx-substitution-extensions",
+      "version": "==2022.2.16",
+      "purl": "pkg:pypi/sphinx-substitution-extensions@2022.2.16",
+      "bom-ref": "pypi/sphinx-substitution-extensions@==2022.2.16"
+    }
+  ]
+}
